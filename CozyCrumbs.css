@@ -1,0 +1,28 @@
+h1 {
+	font-family: Calibri;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: Calibri;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3 {
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+ .box p{ 
+    border-radius: 100px;
+    background: #fbf7f5;
+    padding: 20px; 
+    width: 1098px;
+    height: 400px;
+   
+   }

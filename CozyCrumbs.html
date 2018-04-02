@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF - 8">
+	<meta name="viewport" content="CozyCrumbs">
+	<meta name="keywords" content="macarons">
+	<meta name="keywords" content="bakery">
+	<meta name="author" content="ChristinePhung">
+	
+	<title>Cozy Crumbs Macarons</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="CozyCrumbs.css" type="text/css">
+	<script src="CozyCrumbs.js"></script>
+</head>
+
+ <h1 style="font-size: 100px";>Cozy Crumbs</h1>
+
+<body>
+ <section>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Cozy Crumbs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Flavors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Order</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Follow us!</a>
+      </li>
+</nav>
+<br>
+ 	<div class="container">
+ 		<div class="jumbotron">
+
+      <h1 id="hid"></h1>
+      <script type="text/javascript">
+           var i = 1;
+                function func()
+                {
+                  var message = "Welcome to Cozy Crumbs!";
+                  if( i <= message.length )
+                  {
+                    var txt = message.substring(0,i);
+                    document.getElementById("hid") .innerHTML = txt;
+                    setTimeout("func()", 100);
+                    i++;
+                  }
+                  else {
+                    i = 1;
+                    document.getElementById("hid") .innerHTML = "";
+                    setTimeout("func()", 100);
+
+                  }
+
+                }
+
+                func();
+      </script>
+
+          <div style="font-size: 45pt;"><span style="font-family: Calibri; text-align: center;"><p><strong>Welcome to Cozy Crumbs!</strong></p></span></div>
+           	<div style="font-size: 20pt;"><span style="font-family: Calibri; text-align: center;"><p>There will be some content here blah blah blah</p>
+           </span></div>
+       </div>
+   </div>
+<section>
+		<h2 style="font-size: 50px";>Flavors</h2><br>
+		<div class="box"; align="center">
+    <span style="font-size: 18pt;"><span style="font-family: Calibri;"><p>Flavors right here<br>
+       Strawberry<br>
+       Chocolate<br>
+       Vanilla<br>
+    </p></span>
+  </div>
+   </section>	
+
+   <section>
+
+    <h3 style="font-size: 35px";>Want some macs in your life? Send us an inquiry below!</h3><br>
+    <div class="box"; align="center">
+    <span style="font-size: 18pt;"><span style="font-family: Calibri;"><p>Name form box insert here using JS</p></span>
+  </div>
+
+</section>
+
+		
+</body>
+</html>
