@@ -1,16 +1,19 @@
+body {background-color: rgb(35, 240, 179);}
+
+
 h1 {
-    font-family: Calibri;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 65px;
+	font-family: Calibri;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+    font-size: 70px;
 }
 
 h2 {
-    font-family: Calibri;
-    color: black;
-    text-align: center;
-    font-weight: bold;
+	font-family: Calibri;
+	color: black;
+	text-align: center;
+	font-weight: bold;
 }
 
 h3 {
@@ -19,11 +22,10 @@ h3 {
     text-align: center;
     font-weight: bold;
 }
- .box p{ 
-    border-radius: 100px;
-    background: #fbf7f5;
-    padding: 20px; 
-    width: 1098px;
-    height: 400px;
-   
-   }
+
+textarea {
+
+   font-family:"Calibri";  
+   font-size: 18px; 
+   color:#545454;  
+}
