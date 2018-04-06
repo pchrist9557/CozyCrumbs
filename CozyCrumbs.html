@@ -14,7 +14,8 @@
 	<script src="CozyCrumbs.js"></script>
 </head>
 
- <h1 style="font-size: 65px";>Cozy Crumbs</h1>
+
+<center><img width="700px" src="images/CozyCrumbsBanner.jpg"></center><br>
 
 <body>
  <section>
@@ -39,58 +40,56 @@
        <li class="nav-item">
         <a class="nav-link" href="#">Follow us!</a>
       </li>
+      <li>
+        <img width="37px" src="images/Mail_Icon.png" style="float:right";>&nbsp;&nbsp;
+        <img width="35px" src="images/Facebook_icon.png";>&nbsp;&nbsp;
+        <img width="33px" src="images/New_IG_Icon.png" style="float:center";>&nbsp;&nbsp;
+      </li>
+       
 </nav>
 <br>
  	<div class="container">
  		<div class="jumbotron">
 
-      <h1 id="hid"></h1>
-      <script type="text/javascript">
-           var i = 1;
-                function func()
-                {
-                  var message = "Welcome to Cozy Crumbs!";
-                  if( i <= message.length )
-                  {
-                    var txt = message.substring(0,i);
-                    document.getElementById("hid") .innerHTML = txt;
-                    setTimeout("func()", 100);
-                    i++;
-                  }
-                  else {
-                    i = 1;
-                    document.getElementById("hid") .innerHTML = "";
-                    setTimeout("func()", 100);
-
-                  }
-
-                }
-
-                func();
-      </script>
-
-          <div style="font-size: 45pt;"><span style="font-family: Calibri; text-align: center;"><p><strong>Welcome to Cozy Crumbs!</strong></p></span></div>
-           	<div style="font-size: 20pt;"><span style="font-family: Calibri; text-align: center;"><p>There will be some content here blah blah blah</p>
+    
+            <div style="font-size: 40pt;"><span style="font-family: Calibri; text-align: center;"><p><strong>Welcome</strong></p></span></div>
+           	<div style="font-size: 16pt;"><span style="font-family: Calibri; text-align: left;"><p>Cozy Crumbs Bakehouse - always striving to create a sweet cozy indulgence from the first bite to the crumbs. Specializing in Macarons, and Baking to Order in Oklahoma City.<br><br> We offer French Macarons upon order for the events, parties, holidays, gifts, or any occasion to just treat yourself!<br><br><strong>What are Macarons?</strong><br><br> Macs (aka macarons) are delightful french pastries made with very fine almond flour, egg whites, and confectioners sugar, using a special technique. With a smooth crisp exterior and a lovely chewey bite in the middle, these little desserts will make you feel cozy from the first bite to the last pieces of the crumbs.</p>
            </span></div>
        </div>
    </div>
 <section>
-		<h2 style="font-size: 50px";>Flavors</h2><br>
-		<div class="box"; align="center">
-    <span style="font-size: 18pt;"><span style="font-family: Calibri;"><p>Flavors right here<br>
-       Strawberry<br>
-       Chocolate<br>
-       Vanilla<br>
-    </p></span>
+		<h2 style="font-size: 50px";>Macaron Flavor Menu</h2><br>
+		<div class="container">
+      <div class="jumbotron">
+    <span style="font-size: 18pt; text-align:center;"><span style="font-family: Calibri;">
+       <center><img width="800px" src="images/MacFlavAndPricing.jpg"></center>
   </div>
+</div>
+</div>
    </section>	
 
    <section>
 
-    <h3 style="font-size: 35px";>Want some macs in your life? Send us an inquiry below!</h3><br>
-    <div class="box"; align="center">
-    <span style="font-size: 18pt;"><span style="font-family: Calibri;"><p>Name form box insert here using JS</p></span>
+    <h3 style="font-size: 35px";>Want to order? Send us an inquiry below!</h3><br>
+    <div class="container">
+      <div class="jumbotron">
+    <span style="font-size: 18pt; text-align:center;"><span style="font-family: Calibri;"></span>
+    <form name="contact" method="POST" netlify>
+  <p>
+    <label>Name: <input type="text" name="name"></label>   
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email"></label>
+  </p>
+  <p>
+    <textarea name="textarea"
+   rows="8" cols="40">Order and comment here...</textarea>
+    <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
   </div>
+</div>
 
 </section>
 
