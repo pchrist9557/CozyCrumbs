@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF - 8">
-	<meta name="viewport" content="CozyCrumbs">
-	<meta name="keywords" content="macarons">
-	<meta name="keywords" content="bakery">
-	<meta name="author" content="ChristinePhung">
-	
-	<title>Cozy Crumbs Macarons</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="CozyCrumbs.css" type="text/css">
-	<script src="CozyCrumbs.js"></script>
+  <meta charset="UTF - 8">
+  <meta name="keywords" content="macarons">
+  <meta name="keywords" content="bakery">
+  <meta name="author" content="ChristinePhung">
+  
+  <title>Cozy Crumbs Macarons</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="CozyCrumbs.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  
+  <script src="CozyCrumbs.js"></script>
+  
+  <script>
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+   </script>
 </head>
 
 
@@ -29,13 +71,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#About">About<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Flavors</a>
+        <a class="nav-link" href="#Flavors">Flavors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Order</a>
+        <a class="nav-link" href="#Order">Order</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">Follow us!</a>
@@ -48,27 +90,34 @@
        
 </nav>
 <br>
- 	<div class="container">
- 		<div class="jumbotron">
+  
 
-    
+<div id="About" style="min-height:1000px; background:white;"><br><br>
+  <div class="container">
+    <div class="jumbotron">
+
+           
             <div style="font-size: 40pt;"><span style="font-family: Calibri; text-align: center;"><p><strong>Welcome</strong></p></span></div>
-           	<div style="font-size: 16pt;"><span style="font-family: Calibri; text-align: left;"><p>Cozy Crumbs Bakehouse - always striving to create a sweet cozy indulgence from the first bite to the crumbs. Specializing in Macarons, and Baking to Order in Oklahoma City.<br><br> We offer French Macarons upon order for the events, parties, holidays, gifts, or any occasion to just treat yourself!<br><br><strong>What are Macarons?</strong><br><br> Macs (aka macarons) are delightful french pastries made with very fine almond flour, egg whites, and confectioners sugar, using a special technique. With a smooth crisp exterior and a lovely chewey bite in the middle, these little desserts will make you feel cozy from the first bite to the last pieces of the crumbs.</p>
+            <div style="font-size: 16pt;"><span style="font-family: Calibri; text-align: left;"><p>Cozy Crumbs Bakehouse - always striving to create a sweet cozy indulgence from the first bite to the crumbs. Specializing in Macarons, and Baking to Order in Oklahoma City.<br><br> We offer French Macarons upon order for the events, parties, holidays, gifts, or any occasion to just treat yourself!<br><br><strong>What are Macarons?</strong><br><br> Macs (aka macarons) are delightful french pastries made with very fine almond flour, egg whites, and confectioners sugar, using a special technique. With a smooth crisp exterior and a lovely chewey bite in the middle, these little desserts will make you feel cozy from the first bite to the last pieces of the crumbs.</p>
            </span></div>
        </div>
    </div>
+ </div>
 <section>
-		<h2 style="font-size: 50px";>Macaron Flavor Menu</h2><br>
-		<div class="container">
+  <div id="Flavors" style="min-height:1000px; background:white;"><br>
+    <h2 style="font-size: 50px";>Macaron Flavor Menu</h2><br>
+    <div class="container">
       <div class="jumbotron">
     <span style="font-size: 18pt; text-align:center;"><span style="font-family: Calibri;">
        <center><img width="800px" src="images/MacFlavAndPricing.jpg"></center>
   </div>
 </div>
 </div>
-   </section>	
+</div>
+   </section> 
 
    <section>
+    <div id="Order" style="min-height:1000px; background:white;"><br>
 
     <h3 style="font-size: 35px";>Want to order? Send us an inquiry below!</h3><br>
     <div class="container">
@@ -90,9 +139,11 @@
 </form>
   </div>
 </div>
+</div>
+
 
 </section>
 
-		
+    
 </body>
 </html>
