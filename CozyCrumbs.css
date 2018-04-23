@@ -1,31 +1,50 @@
-body {background-color: rgb(35, 240, 179);}
+body {background-color: rgb(241, 246, 252);}
 
 
 h1 {
-	font-family: Calibri;
-	color: black;
+	font-family: "Century Gothic";
+	color: #2f4cb8;
 	text-align: center;
 	font-weight: bold;
-    font-size: 70px;
+  font-size: 70px;
 }
 
 h2 {
-	font-family: Calibri;
-	color: black;
+	font-family: "Century Gothic";
+	color: #2f4cb8;
 	text-align: center;
 	font-weight: bold;
 }
 
 h3 {
-    font-family: Calibri;
-    color: black;
+    font-family: "Century Gothic";
+    color: #2f4cb8;
     text-align: center;
     font-weight: bold;
 }
 
 textarea {
 
-   font-family:"Calibri";  
+   font-family:"Century Gothic";  
    font-size: 18px; 
    color:#545454;  
+}
+
+h4 {
+	font-family: "Century Gothic";
+    color: #2f4cb8;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navStyle{
+  color:white;
+  font-family: "Century Gothic";
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
 }
