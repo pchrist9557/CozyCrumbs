@@ -1,25 +1,3 @@
-var i = 1;
-  function func()
-                {
-    var message = "Welcome to Cozy Crumbs!";
-    if( i <= message.length )
-      {
-    var txt = message.substring(0,i);
-    document.getElementById("hid") .innerHTML = txt;
-    setTimeout("func()", 100);
-      i++;
-        }else{
-          i = 1;
-          document.getElementById("hid") .innerHTML = "";
-          setTimeout("func()", 100);
-
-          }
-
-          }
-
-          func();
-
-
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -56,3 +34,40 @@ $('a[href*="#"]')
       }
     }
   });
+
+// scroll back to the top with arrow
+
+(function(){
+
+  var link,
+  toggleScrollToTopLink = function(){
+
+    if($("body").scrollTop() > 0 ||
+      $("html").scrollTop() > 0){
+      link.fadeIn(400);
+    }
+    else{
+      link.fadeOut(400);
+    }
+
+  };
+
+  $(document).ready(function(){
+
+    link = $(".scroll-to-top-link");
+    $(window).scroll(toggleScrollToTopLink);
+
+    toggleScrollToTopLink();
+
+    link.on("click", function(){
+      $("body").animate({scrollTop: 0});
+      $("html").animate({scrollTop: 0});
+
+    });
+
+
+
+  });
+
+})();
+
