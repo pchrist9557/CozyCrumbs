@@ -10,8 +10,10 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="CozyCrumbs.css" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 </head>
+
 
 
 <center><img width="500px" src="images/Wildberry_Banner.png"></center><br>
@@ -26,7 +28,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <ul class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-center">
@@ -47,37 +49,64 @@
        <li class="nav-item">
         <a class="nav-link" href="#Follow us!"><span style="font-family: Century Gothic; text-align: center; color: #2f4cb8";>Follow us!</a>
       </li>
+      &nbsp;
+      &nbsp;
+      <li>
+        <img width="30px" src="images/Facebook.png">
+      </li>
+      &nbsp;
+      &nbsp;
+      <li>
+        <img width="30px" src="images/Instagram.png">
+      </li>
+      &nbsp;
+      &nbsp;
+      <li>
+        <img width="30px" src="images/Gmail.png">
+      </li>
+      &nbsp;
+      &nbsp;
 </nav>
 
 <br>
-  
+
+
 <div id="About" style="min-height:1000px; background:white;"><br><br>
   <div class="container">
     <div class="jumbotron">
 
            
             <div style="font-size: 40pt;"><span style="font-family: Century Gothic; text-align: center; color: #2f4cb8";><p><strong>W e l c o m e</strong></p></span></div>
-            <div style="font-size: 16pt;"><span style="font-family: Century Gothic; text-align: left; color:black;"><p>Wildberry Bakehouse is an Oklahoma City based business, specializing in macarons for any occasion!<br><br>We offer French Macarons upon order for the events, parties, holidays, gifts, or any occasion to just treat yourself!<br><br><center><img width="600px" height="300px" src="images/BlueMacs-1.jpg"></center><br><strong>What are Macarons?</strong><br>Macs (aka macarons) are delightful french pastries made with very fine almond flour, egg whites, and confectioners sugar, using a special technique. With a smooth crisp exterior and a lovely chewey bite in the middle, these little desserts will make you feel cozy from the first bite to the last pieces of the crumbs.</p>
+            <div style="font-size: 16pt;"><span style="font-family: Century Gothic; text-align: left; color:black;"><p>Wildberry Bakehouse is an Oklahoma City based business, specializing in macarons for any occasion!<br><br>We offer French Macarons upon order for the events, parties, holidays, gifts, or any occasion to just treat yourself!<br><br>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="">
+              Click me
+            </button>
+            <div class="modal fade" id="mymodal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <h4>Welcome to Wildberry Bakehouse</h4>
+                
+                  <div class="modal-body">
+                    <p>Try our delicious macarons!</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <br><center><img width="600px" height="300px" src="images/BlueMacs-1.jpg"></center><br><strong>What are Macarons?</strong><br>Macs (aka macarons) are delightful french pastries made with very fine almond flour, egg whites, and confectioners sugar, using a special technique. With a smooth crisp exterior and a lovely chewey bite in the middle, these little desserts will make you feel cozy from the first bite to the last pieces of the crumbs.
+
+            <img src="images/dancing_macs.gif" width="90px">
+            </p>
            </span></div>
        </div>
    </div>
-   <div style="font-size: 30pt;"><span style="font-family: Century Gothic; text-align: center; color: #2f4cb8";><p>Follow us on social media!</p></span></div>
-
-   
-    <div class="social media">
-        <div class="imgContainer">
-        <img src="images/Facebook_icon.png" height="60px" width="60px"></p>
-        </div>
-
-   <div class="imgContainer">
-    <img class="middle-img" src="images/New_IG_Icon.png" height="60px" width="60px" class="center">
-  </div>
-  
-  <div class="imgContainer">
-    <img src="images/Mail_Icon.png" height="60px" width="60px" class="center">
-  </div>
-  
-  <div>
 
  </div>
    
@@ -102,7 +131,7 @@
     <div class="container">
       <div class="jumbotron">
     <span style="font-size: 18pt; text-align:center;"><span style="font-family: Century Gothic;"></span>
-    <form name="contact" method="POST" netlify>
+    <form action="https://formspree.io/pchrist9557@gmail.com" method="POST">
   <p>
     <label>Name: <input type="text" name="name"></label>   
   </p>
@@ -119,7 +148,10 @@
   </div>
 </div> 
 </div>
+
 </section>
+
+<img class="scroll-to-top-link" src="images/Arrow.png" alt="" align="right" width="50px">
 
 <section>
   <span style="font-family: Century Gothic; text-align:right; font-size: 16px;"><p><img width="16px" src="images/cc.png">2018 WILDBERRY BAKEHOUSE ALL RIGHTS RESERVED</p></span>
@@ -168,6 +200,9 @@ $('a[href*="#"]')
     }
   });
 
+
    </script>
+
+
 </body>
 </html>
